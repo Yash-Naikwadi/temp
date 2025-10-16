@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Upload, User, FileText, Share2, Eye } from "lucide-react";
+import { Upload, FileText, Share2, Eye } from "lucide-react";
 import "./UserDashboard.css";
 
 function UserDashboard() {

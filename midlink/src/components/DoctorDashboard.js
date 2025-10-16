@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FileText, MessageSquare, User, ClipboardCheck } from "lucide-react";
+import { FileText, MessageSquare, ClipboardCheck } from "lucide-react";
 import "./DoctorDashboard.css";
 
 function DoctorDashboard() {

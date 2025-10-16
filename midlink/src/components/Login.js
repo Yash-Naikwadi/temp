@@ -36,8 +36,7 @@ const Login = () => {
             Secure <span>Access</span>
           </h1>
           <div className="tabs">
-            <a
-              href="#"
+            <button
               className={isLogin ? "active" : ""}
               onClick={(e) => {
                 e.preventDefault();
@@ -45,9 +44,8 @@ const Login = () => {
               }}
             >
               Login
-            </a>
-            <a
-              href="#"
+            </button>
+            <button
               className={!isLogin ? "active" : ""}
               onClick={(e) => {
                 e.preventDefault();
@@ -55,7 +53,7 @@ const Login = () => {
               }}
             >
               Register
-            </a>
+            </button>
           </div>
         </div>
 
@@ -80,20 +78,20 @@ const Login = () => {
                     <option value="patient">Patient</option>
                   </select>
                 </label>
-                <a href="#">Forget Password?</a>
+                <button type="button" onClick={(e) => e.preventDefault()}>Forget Password?</button>
                 <button>Login</button>
               </form>
               <p>
                 Not a Member?{" "}
-                <a
-                  href="#"
+                <button
+                  type="button"
                   onClick={(e) => {
                     e.preventDefault();
                     navigate("/register");
                   }}
                 >
                   Signup now
-                </a>
+                </button>
               </p>
             </div>
           ) : (
@@ -123,15 +121,15 @@ const Login = () => {
                 <button>Create Account</button>
                 <p>
                   Already have an account?{" "}
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     onClick={(e) => {
                       e.preventDefault();
                       navigate("/login");
                     }}
                   >
                     Log in
-                  </a>
+                  </button>
                 </p>
               </form>
             </div>

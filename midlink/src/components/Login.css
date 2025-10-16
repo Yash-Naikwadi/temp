@@ -147,15 +147,19 @@ body {
   font-size: 18px;
 }
 
-.tabs a {
+.tabs button {
     text-decoration: none;
     color: #aaa;
     transition: 0.3s;
     font-size: 2.4rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
-.tabs a.active,
-.tabs a:hover {
+.tabs button.active,
+.tabs button:hover {
   color: #00bcd4;
 }
 
@@ -223,6 +227,24 @@ p {
   text-align: center;
   font-size: 14px;
   margin-top: 10px;
+}
+
+p button {
+  background: transparent;
+  color: #00bcd4;
+  text-decoration: underline;
+  font-size: 13px;
+  padding: 0;
+  cursor: pointer;
+}
+
+form > button[type="button"] {
+  background: transparent;
+  color: #00bcd4;
+  text-decoration: none;
+  padding: 0;
+  text-align: left;
+  font-size: 13px;
 }
 
 /* ---------- Responsive ---------- */
