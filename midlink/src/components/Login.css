@@ -1,0 +1,262 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  /* remove scrollbar */
+}
+
+.auth-page {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #0f172a;
+}
+
+/* ---------- LEFT SIDE ---------- */
+.leftbox {
+  flex: 1;
+  background-color: #0f766e;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.circle1 {
+    width: 350px;
+    height: 350px;
+    top: -183px;
+    left: -177px;
+}
+
+.circle2 {
+  width: 350px;
+    height: 350px;
+    bottom: -183px;
+    right: -150px;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 400px;
+  z-index: 1;
+  text-align: left;
+  gap: 15px;
+}
+
+.logo-icon {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 186px;
+    left: 228px;
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 195px;
+    left: 314px;
+}
+
+.f{
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+    width: 87%;
+    left: 81px;
+    top: 275px;
+    position: absolute;
+}
+.s{
+  font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+    position: absolute;
+    top: 343px;
+    left: 280px;
+}
+
+.leftbox p {
+    width: 60%;
+    color: #e2e8f0;
+    line-height: 1.6;
+    font-size: 15px;
+    position: absolute;
+    top: 421px;
+    left: 159px;
+}
+
+/* ---------- RIGHT SIDE ---------- */
+.rightbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #0f172a;
+}
+
+/* Header */
+.auth-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.auth-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.auth-header span {
+  /* color: #00bcd4; */
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 18px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #aaa;
+    transition: 0.3s;
+    font-size: 2.4rem;
+}
+
+.tabs a.active,
+.tabs a:hover {
+  color: #00bcd4;
+}
+
+/* ---------- FORM BOX ---------- */
+.auth-container {
+  width: 100%;
+  max-width: 380px;
+  background-color: #0b132b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #1d4ed8;
+}
+
+.loginform h2,
+.registerform h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #e2e8f0;
+  color: #000;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #ff3c00;
+  color: white;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #00bcd4;
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .auth-page {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftbox,
+  .rightbox {
+    flex: none;
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .auth-container {
+    margin-top: 20px;
+  }
+}
+
+/* ---------- Select Role Field ---------- */
+select {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #e2e8f0;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: 2px solid #00bcd4;
+}
